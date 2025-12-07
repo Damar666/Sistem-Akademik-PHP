@@ -2,9 +2,6 @@
 
 Aplikasi manajemen akademik kampus yang dirancang dengan arsitektur **3-Tier** untuk keamanan dan skalabilitas tinggi. Proyek ini memisahkan *Application Server* (PHP) dan *Database Server* (MySQL via Docker).
 
-![Dashboard Preview](link_gambar_dashboard_anda_disini.png)
-*(Ganti tulisan ini dengan link screenshot dashboard Anda yang paling keren)*
-
 ## 🚀 Fitur Unggulan
 * **Arsitektur MVC:** Kode terstruktur rapi (Model, View, Controller), bukan *spaghetti code*.
 * **Keamanan:**
@@ -21,4 +18,5 @@ Aplikasi manajemen akademik kampus yang dirancang dengan arsitektur **3-Tier** u
 * **Database:** MySQL 8.0 (Containerized via Docker).
 * **Frontend:** HTML5, CSS3 (Custom Dashboard Styling).
 * **Server:** Apache (Laragon).
+
 
