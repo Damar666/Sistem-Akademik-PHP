@@ -1,0 +1,110 @@
+/* Mengatur dasar halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Memberi latar belakang abu-abu muda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/*
+ * Kontainer utama untuk form login.
+ * Ini adalah kotak putih dengan bayangan dan sudut melengkung.
+*/
+.login-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    width: 350px;
+    box-sizing: border-box; /* Memastikan padding tidak menambah lebar */
+}
+
+/* Judul "Login Page" */
+.login-container h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/*
+ * Grup untuk setiap input (ikon + input field)
+ * 'position: relative' diperlukan agar kita bisa menempatkan ikon di dalamnya.
+*/
+.input-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+/*
+ * Ikon di dalam input field
+ * 'position: absolute' untuk menempatkannya di atas input field.
+ * 'transform: translateY(-50%)' untuk membuatnya pas di tengah secara vertikal.
+*/
+.input-group .icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+/*
+ * Khusus untuk ikon bintang, kita buat lebih besar dan tebal
+ * agar mirip dengan gambar.
+*/
+.input-group .icon-pass {
+    font-size: 1.5rem;
+    font-weight: bold;
+    left: 14px; /* Sedikit penyesuaian posisi */
+}
+
+/*
+ * Input field (Username & Password)
+ * 'padding-left: 40px' adalah kunci utamanya.
+ * Ini memberi ruang di sebelah kiri agar teks tidak menimpa ikon.
+*/
+.input-group input {
+    width: 100%;
+    padding: 12px 12px 12px 40px; /* Atas, Kanan, Bawah, Kiri */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Konsistensi ukuran */
+}
+
+/* Grup untuk "Remember me" */
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Checkbox */
+.remember-me input {
+    margin-right: 8px; /* Jarak antara checkbox dan teks */
+}
+
+/* Tombol "Log In" */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745; /* Warna hijau seperti di gambar */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efek hover halus */
+}
+
+/* Efek saat mouse di atas tombol */
+.login-button:hover {
+    background-color: #216088ff; /* Hijau sedikit lebih gelap */
+}
